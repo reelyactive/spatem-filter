@@ -1,0 +1,34 @@
+{
+  "name": "spatem-filter",
+  "homepage": "https://github.com/reelyactive/spatem-filter/",
+  "author": {
+    "name": "reelyActive",
+    "email": "info@reelyactive.com"
+  },
+  "description": "Filter for spatems based on a standardised set of parameters.  We believe in an open Internet of Things.",
+  "keywords": [
+    "reelyActive",
+    "spatem",
+    "filter"
+  ],
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "./lib/spatemfilter.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/spatem-filter.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "bugs": {
+    "url": "https://github.com/reelyactive/spatem-filter/issues"
+  },
+  "contributors": [
+    { "name": "Jeffrey Dungen" }
+  ],
+  "license": "MIT"
+}
