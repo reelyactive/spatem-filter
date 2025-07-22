@@ -5,6 +5,8 @@ A __spatem-filter__ facilitates the filtering of spatial-temporal (__spatem__) I
 
 __spatem-filter__ is a lightweight [Node.js package](https://www.npmjs.com/package/spatem-filter) that is typically used with a [chimps](https://github.com/reelyactive/chimps) instance and the barnacles-x family of modules which relay __spatem__ data to specific endpoints.  Together these packages are core components of reelyActive's [Pareto Anywhere](https://www.reelyactive.com/pareto/anywhere/) open source IoT middleware.
 
+See also the __spatem-filter__'s sister modules, [raddec-filter](https://github.com/reelyactive/raddec-filter) and [dynamb-filter](https://github.com/reelyactive/dynamb-filter).
+
 
 Hello spatem-filter!
 --------------------
@@ -59,6 +61,12 @@ Array of deviceIdTypes to accept.  See the [list of identifier types](https://re
 ```javascript
 let acceptedDeviceIdTypes = [ 2, 3 ];
 ```
+
+
+Filter logic
+------------
+
+The __spatem-filter__ will iterate sequentially through each included filter parameter, and return `false` if _any_ should fail.  If _all_ included filter parameters are passing, the __spatem-filter__ will return `true`.
 
 
 Contributing
